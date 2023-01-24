@@ -22,7 +22,8 @@ NAVBAR
 
 FOOTER
   The footer will contain, the logo, the social media links of the owner it shall also contain the copyright.
-  the social media links are twitter, facebook and whatsapp.
+  the social media links are twitter, facebook and whatsapp. Footer should also contain links to the various
+  pages of the website and links to policy privacy and terms and conditions.It must also contain who designed the and developed the page.
     PC
       The logo and the social media links should be displayed in two column layers. the logo on one side and the social media on the other side.
       The copyright should be place at the bottom of the page in the center. It should be placed below the logo and social media links
