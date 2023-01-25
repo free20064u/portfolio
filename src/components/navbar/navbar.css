@@ -31,9 +31,10 @@
   display: inline-block;
 }
 
-#menu, #close {
+#menuClose {
   display: none;
 }
+
 /* On screens that are 600px or less, set the background color to olive */
 @media screen and (max-width: 768px) {
   .container {
@@ -43,6 +44,10 @@
 
   .nav {
     display: none;
+  }
+
+  #menuClose {
+    display: flex;
   }
 
   #menu {

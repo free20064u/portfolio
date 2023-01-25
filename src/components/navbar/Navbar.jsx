@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './navbar.css';
 import logo from '../../asserts/images/logo.png';
 import menu from '../../asserts/icons/menu.png';
@@ -20,6 +20,12 @@ function Navbar() {
       path: 'Contact'
     }
   ]
+
+  const [hidden, setHidden] = useState(true);
+  const showHide = () => {
+    setHidden(!hidden);
+  }
+
   return (
     <div className='navbar container'>
       <div id='nameLogo'>
@@ -27,8 +33,22 @@ function Navbar() {
         <div><h1>Alfswebdev</h1></div>
       </div>
       <div>
-        <img src={menu} id="menu" alt="menu" />
-        <img src={close} id="close" alt="close" />
+        <div id="menuClose">
+          <img 
+            src={menu} 
+            id="menu" 
+            alt="menu" 
+            style={{display: hidden ? 'flex': 'none'}} 
+            onClick={showHide}
+          />
+          <img 
+            src={close} 
+            id="close" 
+            alt="close" 
+            style={{display: hidden ? 'none': 'flex'}}
+            onClick={showHide}
+          />
+        </div>
         <nav className='nav'>
           <ul className='nav-links'>
             {links.map(link => <li className='nav-link'><a href="#" className='link'>{link.path}</a></li>)}
