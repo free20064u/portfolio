@@ -1,0 +1,59 @@
+
+.link {
+  color: var(--blue-green);
+  text-decoration: none;
+}
+
+.nav-link {
+  color: var(--blue-green);
+  margin-left: 2rem;
+  font-size: 1.75rem;
+  font-weight: bold;
+  display: inline;
+  list-style-type: none;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+}
+
+#nameLogo {
+  display: flex;
+}
+
+#logo {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+.nav {
+  display: inline-block;
+}
+
+#menu, #close {
+  display: none;
+}
+/* On screens that are 600px or less, set the background color to olive */
+@media screen and (max-width: 768px) {
+  .container {
+    margin: 0px;
+    padding: 0.5rem;
+  }
+
+  .nav {
+    display: none;
+  }
+
+  #menu {
+    display: inline;
+  }
+
+  #close {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 430px) {
+ 
+}
