@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import './navbar.css';
 import logo from '../../asserts/images/logo.png';
 import menu from '../../asserts/icons/menu.png';
-import close from '../../asserts/icons/close.png'
+import close from '../../asserts/icons/close.png';
 
 function Navbar() {
 
