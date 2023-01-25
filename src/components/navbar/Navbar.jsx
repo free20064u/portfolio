@@ -3,7 +3,7 @@ import logo from '../../asserts/images/logo.png'
 
 function Navbar() {
   return (
-    <div className='navbar'>
+    <div className='navbar container'>
       <div><h1>Alfswebdev</h1></div>
       <div>
         <nav>
