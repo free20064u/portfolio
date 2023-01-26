@@ -32,3 +32,22 @@
  }
  
 }
+
+@media screen and (max-width:425px) {
+  #footer-content {
+    padding: 1rem 0px;
+    display: block;
+    justify-content: space-between;
+  }
+  
+  #footer-content div {
+    margin: 1rem 0px;
+  }
+
+  div ul li {
+    margin-left: 1.5rem;
+  }
+  #social-media {
+    text-align: center;
+  }
+}
