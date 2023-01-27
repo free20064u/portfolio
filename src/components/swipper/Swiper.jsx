@@ -1,4 +1,4 @@
-import { EffectCoverflow, Navigation, Pagination, Scrollbar, A11y } from 'swiper';
+import { EffectCoverflow, Navigation, Pagination} from 'swiper';
 
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -30,7 +30,7 @@ export default () => {
           modifier: 1,
           slideShadows: true,
         }}
-      modules={[EffectCoverflow,Navigation, Pagination, Scrollbar, A11y]}
+      modules={[EffectCoverflow,Navigation, Pagination]}
       navigation
       pagination={{ clickable: true }}
       
@@ -39,7 +39,6 @@ export default () => {
       <SwiperSlide><img src={slide2} alt='slide1' /></SwiperSlide>
       <SwiperSlide><img src={slide2} alt='slide1' /></SwiperSlide>
       <SwiperSlide><img src={slide2} alt='slide1' /></SwiperSlide>
-      ...
     </Swiper>
   );
 };
