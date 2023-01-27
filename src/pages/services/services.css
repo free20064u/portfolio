@@ -1,0 +1,15 @@
+#skills-tools {
+  display: flex;
+  margin: 1.5rem 0px;
+}
+
+#skills-tools div {
+  margin-right: 50%;
+}
+
+#project-title {
+  text-align: center;
+  color: var(--color-white);
+  background-color: var(--blue-green);
+  font-weight: 100;
+}
