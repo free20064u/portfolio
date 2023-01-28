@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import './navbar.css';
 import logo from '../../asserts/images/logo.png';
 import menu from '../../asserts/icons/menu.png';
@@ -9,14 +10,17 @@ function Navbar() {
   const links = [
     {
       id: 1,
+      to: '/home',
       path: 'Home'
     },
     {
       id: 2,
+      to: '/services',
       path: 'Services'
     },
     {
       id: 3,
+      to: '/contact',
       path: 'Contact'
     }
   ]
@@ -52,7 +56,7 @@ function Navbar() {
         </div>
         <nav className='nav'>
           <ul className='nav-links'>
-            {links.map(link => <li className='nav-link'><a href="#" className='link'>{link.path}</a></li>)}
+            {links.map(link => <li className='nav-link'><Link to={link.to} className='link'>{link.path}</Link></li>)}
           </ul>
         </nav>
       </div>
