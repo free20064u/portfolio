@@ -7,7 +7,12 @@
   --blue-green: #166678;
   --faded-bgreen: #1faac9;
   --color-white: #ffffff;
+  --bg-glassy: linear-gradient(to right, 
+  rgba(22, 102, 120, 0.8), rgba(22, 102, 120, 0.5)
+    );
+  --fbg-glassy: rgba(31, 170, 201, 0.5);
 }
+
 
 body {
   color: var(--blue-green);

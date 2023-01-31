@@ -17,8 +17,9 @@
   padding: 0.5rem 4rem;
   margin: 2rem 0px;
   color: var(--color-white);
-  background-color: var(--blue-green);
+  background: var(--bg-glassy);
   border-radius: 1rem;
+  border: 1px solid #ffff;
 }
 
 @media screen and (max-width: 768px) {
