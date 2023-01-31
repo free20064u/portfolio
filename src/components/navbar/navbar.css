@@ -13,6 +13,12 @@
   list-style-type: none;
 }
 
+.link:hover {
+  color: var(--fbg-glassy);
+  
+  border-bottom: 2px solid var(--fbg-glassy);
+}
+
 .navbar {
   display: flex;
   justify-content: space-between;
