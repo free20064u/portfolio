@@ -10,7 +10,7 @@ function Navbar() {
   const links = [
     {
       id: 1,
-      to: '/home',
+      to: '/',
       path: 'Home'
     },
     {
