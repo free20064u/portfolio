@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './homepage.css';
 
 function Homepage() {
@@ -6,7 +7,8 @@ function Homepage() {
     <div className="container intro">
       <h1 id='intro-remark'>WELCOME TO ALFSWEBDEV</h1>
       <h2 id='slogan'>home of modern website</h2>
-      <button className='intro-btn'>Check my work</button>
+      <Link to='/services'><button className='intro-btn'>Check my work</button></Link>
+      
     </div>
   )
 }
