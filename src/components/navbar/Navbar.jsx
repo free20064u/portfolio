@@ -62,6 +62,14 @@ function Navbar() {
       </div>
     </div>
     <hr />
+
+    <div id={!hidden ? 'mobile-menu' : 'hide-mobile-menu'} >
+      <nav >
+          <ul id='mobile-links'>
+            {links.map(link => <li><Link className="mobile-link" to={link.to} >{link.path}</Link></li>)}
+          </ul>
+        </nav>
+    </div>
     </>
   )
 }
