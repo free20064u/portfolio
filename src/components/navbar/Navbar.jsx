@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import './navbar.css';
 import logo from '../../asserts/images/logo.png';
@@ -30,6 +30,11 @@ function Navbar() {
     setHidden(!hidden);
   }
 
+  const w = window.innerWidth;
+  console.log(w);
+
+  useEffect(()=>{}, [])
+
   return (
     <>
     <div className='navbar container'>
@@ -56,17 +61,18 @@ function Navbar() {
         </div>
         <nav className='nav'>
           <ul className='nav-links'>
-            {links.map(link => <li className='nav-link'><Link to={link.to} className='link'>{link.path}</Link></li>)}
+            {links.map(link => <li key={link.id} className='nav-link'><Link to={link.to} className='link'>{link.path}</Link></li>)}
           </ul>
         </nav>
       </div>
     </div>
     <hr />
 
-    <div id={!hidden ? 'mobile-menu' : 'hide-mobile-menu'} >
-      <nav >
+
+    <div id={ !hidden ? 'mobile-menu' : 'hide-mobile-menu'} >
+      <nav id={w < 769 ? 'mobile-menu' : 'hide-mobile-menu'}>
           <ul id='mobile-links'>
-            {links.map(link => <li><Link className="mobile-link" to={link.to} >{link.path}</Link></li>)}
+            {links.map(link => <li key={link.id}><Link className="mobile-link" to={link.to} >{link.path}</Link></li>)}
           </ul>
         </nav>
     </div>
