@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import './navbar.css';
 import logo from '../../asserts/images/logo.png';
@@ -40,10 +40,12 @@ function Navbar() {
   return (
     <>
     <div className='navbar container'>
+      <Link to="/" className='logo-link'>
       <div id='nameLogo'>
         <img src={logo} id="logo" alt="logo" />
         <div><h1>Alfswebdev</h1></div>
       </div>
+      </Link>
       <div>
         <div id="menuClose">
           <img 

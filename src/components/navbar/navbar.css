@@ -5,6 +5,11 @@
   text-shadow: 1px 2px rgba(255, 255, 255, 1) ;
 }
 
+.logo-link {
+  text-decoration: none;
+  color: var(--blue-green);
+}
+
 .nav-link {
   color: var(--blue-green);
   margin-left: 2rem;
@@ -27,6 +32,7 @@
 
 #nameLogo {
   display: flex;
+  text-decoration: none;
   text-shadow: 1px 2px rgba(255, 255, 255, 1) ;
 }
 
