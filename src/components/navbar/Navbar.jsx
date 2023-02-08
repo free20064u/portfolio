@@ -25,15 +25,17 @@ function Navbar() {
     }
   ]
 
+  const resetShowHide = ()=>{
+    setHidden(true)
+  }
+
+
   const [hidden, setHidden] = useState(true);
   const showHide = () => {
     setHidden(!hidden);
   }
 
-  const w = window.innerWidth;
-  console.log(w);
-
-  useEffect(()=>{}, [])
+ 
 
   return (
     <>
@@ -68,11 +70,10 @@ function Navbar() {
     </div>
     <hr />
 
-
-    <div id={ !hidden ? 'mobile-menu' : 'hide-mobile-menu'} >
-      <nav id={w < 769 ? 'mobile-menu' : 'hide-mobile-menu'}>
+    <div id={!hidden ? 'mobile-menu' : 'hide-mobile-menu'}>
+      <nav >
           <ul id='mobile-links'>
-            {links.map(link => <li key={link.id}><Link className="mobile-link" to={link.to} >{link.path}</Link></li>)}
+            {links.map(link => <li key={link.id} onClick={resetShowHide}><Link className="mobile-link" to={link.to} >{link.path}</Link></li>)}
           </ul>
         </nav>
     </div>
