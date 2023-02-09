@@ -1,0 +1,16 @@
+.cards-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.card {
+  width: 30%;
+  background-color: yellow;
+  margin: 1rem 0px;
+}
+
+.card-image {
+  width: 100%;
+}

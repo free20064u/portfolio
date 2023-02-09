@@ -1,6 +1,7 @@
 import React from 'react';
 import './services.css';
 import Swiper from '../../components/swipper/Swiper';
+import Card from '../../components/cards/Card';
 
 function Services() {
   return (
@@ -30,7 +31,7 @@ function Services() {
       <div id='projects'>
         <h2 id='project-title'>Projects</h2>
         <div>
-          <Swiper/>
+          <Card/>
         </div>
       </div>
     </div>
