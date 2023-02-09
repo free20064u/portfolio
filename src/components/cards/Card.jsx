@@ -1,27 +1,41 @@
 import React from 'react';
 import './card.css';
-import cardImage from '../../asserts/images/logo2.png';
+import cardImage from '../../asserts/images/backgroundpic.jpg';
+import schoolsyt from '../../asserts/images/moontree.jpg';
+import pattern from "../../asserts/images/bgpattern.jpg"
 
 function Card() {
+
+  const projects = [
+    {
+      id: 1,
+      name: 'Lucky Shrub',
+      image: cardImage,
+      path: 'www.luckyshrub.com'
+    },
+    {
+      id: 2,
+      name: 'School system',
+      image: schoolsyt,
+      path: 'www.schoolsys.com'
+    },
+    {
+      id: 3,
+      name: 'pattern',
+      image: pattern,
+      path: 'www.patterns.com'
+    }
+  ]
+
   return (
     <>
       <div className="cards-container">
-        <div className="card card1">
-          <img src={cardImage} className="card-image" alt="" />
-          <p>card one</p>
+        {projects.map( project => 
+        <div className="card card1" key={project.id}>
+          <img src={project.image} className="card-image" alt="" />
+          <p className="box">{project.name}</p>
         </div>
-        <div className="card card2">
-          <img src={cardImage} className="card-image" alt="" />
-          <p>card two</p>
-        </div>
-        <div className="card card3">
-          <img src={cardImage} className="card-image" alt="" />
-          <p>card three</p>
-        </div>
-        <div className="card card4">
-          <img src={cardImage} className="card-image" alt="" />
-          <p>card four</p>
-        </div>
+        )}
       </div>
     </>
   )
