@@ -1,34 +1,29 @@
-#skills-tools {
+.service-cards {
   display: flex;
   margin: 1.5rem 0px;
+  justify-content: space-between;
 }
 
-#skills-tools div {
-  margin-right: 50%;
-}
-
-#project-title {
+.service-card {
+  width: 24%;
   text-align: center;
+}
+
+.service-card-title {
+  padding: .3rem;
+  border-radius: 20px 0px;
+  margin-bottom: 0.5rem;
   color: var(--color-white);
   background-color: var(--blue-green);
-  font-weight: 100;
+}
+
+.service-para {
+  color: red;
 }
 
 
-@media screen and (max-width: 425px) {
-  #skills-tools {
-    display: flex;
-    margin: 1.5rem 0px;
-  }
-  
-  #skills-tools div {
-    margin-right: 30%;
-  }
-  
-  #project-title {
-    text-align: center;
-    color: var(--color-white);
-    background-color: var(--blue-green);
-    font-weight: 100;
+@media screen and (max-width: 768px) {
+  .service-card {
+    width: 45%;
   }
 }
