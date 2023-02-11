@@ -3,6 +3,12 @@ import './services.css';
 import Swiper from '../../components/swipper/Swiper';
 import Card from '../../components/cards/Card';
 import django from '../../asserts/svg/django.svg';
+import mysql from '../../asserts/svg/mysql.svg';
+import github from '../../asserts/svg/github.svg';
+import adobe_xd from '../../asserts/svg/adobexd.svg';
+import react from '../../asserts/svg/react.svg';
+import vscode from '../../asserts/svg/vscode.svg';
+import adobe_ai from '../../asserts/svg/adobeai.svg';
 
 function Services() {
   const skills = [
@@ -15,7 +21,7 @@ function Services() {
     {
       id: 2,
       name: 'MySql',
-      image: django,
+      image: mysql,
       content: 'Mysql is the data handler for the backend. Mysql is very effective in handling huge database and also very secured'
     },
     {
@@ -27,7 +33,7 @@ function Services() {
     {
       id: 4,
       name: 'React js',
-      image: django,
+      image: react,
       content: 'This is used for the creation of the frontend of the website more specifically single page applications'
     }
   ]
@@ -36,25 +42,25 @@ function Services() {
     {
       id: 1,
       name: "Adobe Ai",
-      image: django,
+      image: adobe_ai,
       description: "Adobe Ai has some excellent features that enable us to design beautiful mordern icons for our clients."
     },
     {
       id: 2,
       name: "Adobe Xd",
-      image: django,
+      image: adobe_xd,
       description: "Adobe Xd have some excellent features that helps to design the User Interface and User experience of the for our client even before we begin to develop it."
     },
     {
       id: 3,
       name: "Github",
-      image: django,
+      image: github,
       description: "Its an excellent tool that enable us to safely store our project online. It also gives the flexibility of collaboration among project developers"
     },
     {
       id: 4,
       name: "VScode",
-      image: django,
+      image: vscode,
       description: "A very simple but yet majestic tool that is used for wrighting of the code for the website."
     }
   ]

@@ -1,6 +1,7 @@
 .service-cards {
   display: flex;
   margin: 1.5rem 0px;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 
@@ -24,6 +25,12 @@
 
 @media screen and (max-width: 768px) {
   .service-card {
-    width: 45%;
+    width: 48%;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .service-card {
+    width: 98%;
   }
 }
