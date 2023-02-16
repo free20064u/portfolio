@@ -11,7 +11,7 @@ function Card() {
       id: 1,
       name: 'Lucky Shrub',
       image: cardImage,
-      path: 'www.luckyshrub.com'
+      path: 'http://luckyshrubs.netlify.app/'
     },
     {
       id: 2,
@@ -31,10 +31,14 @@ function Card() {
     <>
       <div className="cards-container">
         {projects.map( project => 
-        <div className="card card1" key={project.id}>
-          <img src={project.image} className="card-image" alt="" />
-          <p className="box">{project.name}</p>
-        </div>
+        
+          <div className="card card1" key={project.id}>
+            <a href={project.path} target="_blank">
+            <img src={project.image} className="card-image" alt="" />
+            <p className="box">{project.name}</p>
+            </a>
+          </div>
+       
         )}
       </div>
     </>
