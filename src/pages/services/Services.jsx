@@ -9,6 +9,10 @@ import adobe_xd from '../../asserts/svg/adobexd.svg';
 import react from '../../asserts/svg/react.svg';
 import vscode from '../../asserts/svg/vscode.svg';
 import adobe_ai from '../../asserts/svg/adobeai.svg';
+import html from '../../asserts/svg/html.svg';
+import css from '../../asserts/svg/css.svg';
+import javascript from '../../asserts/svg/javascript.svg';
+import python from '../../asserts/svg/python-b-w.svg';
 
 function Services() {
   const skills = [
@@ -69,22 +73,22 @@ function Services() {
     {
       id : 1, 
       name : 'CSS',
-      image: ''
+      image: css,
     }, 
     {
       id: 2, 
       name: 'HTML',
-      image: ''
+      image: html,
     },
     {
       id: 3,
       name: "JAVASCRIPT",
-      image: ''
+      image: javascript,
     },
     {
       id: 4, 
       name: 'PYTHON',
-      image: ''
+      image: python,
     }
 
   ]
