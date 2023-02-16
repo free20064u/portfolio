@@ -64,6 +64,30 @@ function Services() {
       description: "A very simple but yet majestic tool that is used for wrighting of the code for the website."
     }
   ]
+
+  const languages = [
+    {
+      id : 1, 
+      name : 'CSS',
+      image: ''
+    }, 
+    {
+      id: 2, 
+      name: 'HTML',
+      image: ''
+    },
+    {
+      id: 3,
+      name: "JAVASCRIPT",
+      image: ''
+    },
+    {
+      id: 4, 
+      name: 'PYTHON',
+      image: ''
+    }
+
+  ]
   return (
     <div className='container'>
       <div className="skills">
@@ -96,12 +120,13 @@ function Services() {
       
       <div>
         <h2>Languages</h2>
-        <ul>
-          <li>Css</li>
-          <li>Html</li>
-          <li>Javascript</li>
-          <li>Python</li>
-        </ul>
+        <div className='service-cards'>
+          {languages.map(language => 
+            <div className='service-card'>
+              <h4 className='service-card-title'>{language.name}</h4>
+              <img className='service-image' src={language.image} alt={language.name} />
+            </div>)}
+        </div>
       </div>
       
       <div id='projects'>
