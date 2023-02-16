@@ -20,6 +20,9 @@
 #copyright {
   font-size: 0.7rem;
 }
+#go-to, #other-links {
+  color: var(--web-color);
+}
 
 @media screen and (max-width:768px) {
  #foot-logo {

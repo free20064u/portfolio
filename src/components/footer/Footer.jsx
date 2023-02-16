@@ -14,7 +14,7 @@ function Footer() {
             <img src={logo} id="footer-logo" alt="footer-logo" />
           </div>
           <div id="go-to">
-            <h4>Go To;</h4>
+            <h4>Go To:</h4>
             <ul>
               <li>Home</li>
               <li>Services</li>
@@ -22,7 +22,7 @@ function Footer() {
             </ul>
           </div>
           <div id='other-links'>
-          <h4>Other Links;</h4>
+          <h4>Other Links:</h4>
             <ul>
               <li>Privacy Policy</li>
               <li>Terms & Condition</li>

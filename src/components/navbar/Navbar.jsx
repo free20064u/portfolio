@@ -43,7 +43,7 @@ function Navbar() {
       <Link to="/" className='logo-link'>
       <div id='nameLogo'>
         <img src={logo} id="logo" alt="logo" />
-        <div><h1>Alfswebdev</h1></div>
+        <div><h1>Alfys <span>Web</span>dev</h1></div>
       </div>
       </Link>
       <div>
